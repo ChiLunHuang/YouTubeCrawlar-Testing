@@ -1,5 +1,6 @@
 
 # YouTubeCrawlar-Testing: Using requests, shutil and pafy.
+# Python 3
 # 2016-04-12, by ChiLun, Huang.
 
 # A Crawler for YouTube Videos .
@@ -32,6 +33,7 @@ streams = video.streams
 # If i want to search and download video and its format is mp4, i can choose the result i want by information from streams.
 # requests is for getting webpage data and declare that is a stream.
 # shutil.copyfileobj(res.raw,f) can get a content of copy. See more (https://docs.python.org/3/library/shutil.html) 
+
 print('Finding video......')
 checkmp4=0
 for s in streams:
