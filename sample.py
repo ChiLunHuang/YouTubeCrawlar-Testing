@@ -30,7 +30,7 @@ streams = video.streams
 #for s in streams:
 #    print(s.resolution, s.extension, s.get_filesize(), s.url)
 
-# If i want to search and download video and its format is mp4, i can choose the result i want by information from streams.
+# If you want to search and download video and its format is mp4, you can choose the result i want by information from streams.
 # requests is for getting webpage data and declare that is a stream.
 # shutil.copyfileobj(res.raw,f) can get a content of copy. See more (https://docs.python.org/3/library/shutil.html) 
 
