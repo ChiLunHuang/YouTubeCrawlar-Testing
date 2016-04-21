@@ -38,7 +38,7 @@ streams = video.streams
 #    print(s.resolution, s.extension, s.get_filesize(), s.url)
 ```
 
-## To get web content by using requests
+## To get web content by using requests.
 
 After finding real url by pyfy, we can use `requests` to get the web content.
 
@@ -47,3 +47,17 @@ After finding real url by pyfy, we can use `requests` to get the web content.
 ```python
 res=requests.get(s.url,stream=True)
 ````
+
+## Download the video you want by shutil.
+
+> get more information from [Python Documentation](https://docs.python.org/3/library/shutil.html)
+
+```python
+with open('D://{}.mp4'.format(title),'wb') as f:
+  shutil.copyfileobj(res.raw,f)
+```
+
+## Try it. 
+
+>[Example](https://github.com/ChiLunHuang/YouTubeVideoCrawlar-Example/blob/master/sample.py)
+
